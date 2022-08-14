@@ -2,7 +2,8 @@ let myDiv = document.getElementById("root");
 const arrShapes = ["speed", "dimond", "heart", "club"];
 let arrCards = new Array();
 let counter = 0;
-let myBtn = document.getElementById("btn");
+let myBtn = document.createElement("button");
+myBtn.textContent = "Click here to display your deck";
 class Cards {
   constructor(num, suit, id) {
     (this.num = num), (this.suit = suit), (this.id = id);
